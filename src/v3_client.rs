@@ -132,24 +132,24 @@ impl<'a> FWV3Client<'a> {
         (CardChargeReq, initiate_card_charge)
         (BankTransferReq, initiate_bank_transfer)
         (AchReq, initiate_ach_payment)
-        
+
         // Verify Trans
         (VerifyTransByIdReq, verify_trans_by_id)
         (VerifyTransByTxRefReq, verify_trans_by_txref)
-        
+
         // Validate Charge
         (ValidateChargeReq, validate_charge)
-        
+
         // PreAuth
         (CapturePreAuthChargeReq, capture_preauth_charge)
         (VoidPreAuthChargeReq, void_preauth_charge)
         (RefundPreAuthChargeReq, refund_preauth_charge)
-    
+
         // Virtual Acct
         (BulkVirtualAcctDetailsReq, get_bulk_virtual_acct_details)
         (VirtualAcctCreationReq, create_virtual_acct_no)
         (VirtualAcctBulkCreationReq, create_bulk_virtual_acct_no)
-    
+
         // Transactions
         (FetchRefundedTransReq, fetch_refunded_transactions)
         (FetchMultiRefundedTransReq, fetch_multi_refunded_transactions)
@@ -158,7 +158,7 @@ impl<'a> FWV3Client<'a> {
         (RefundTransactionReq, refund_transaction)
         (ResendFailedWebhookReq, resend_failed_webhook)
         (ViewTransTimelineReq, view_trans_imeline)
-    
+
         // Payment Plans
         (CreatePlanReq, create_payment_plan)
         (GetPlanReq, get_payment_plan)
@@ -166,5 +166,4 @@ impl<'a> FWV3Client<'a> {
         (CancelPlanReq, cancel_payment_plan)
         (UpdatePlanReq, update_payment_plan)
     );
-
 }

@@ -17,7 +17,7 @@ thiserror = "1.0.57"
 serde_json = "1.0.114"
 chrono = { version="0.4.38", features=["serde"] }
 # flutterwave-models = { package="flutterwave-v3-models", path="flutterwave-v3-models", version="0.1.3-alpha.1" }
-flutterwave-models = { package="flutterwave-v3-models", version="0.1.3-alpha.1" }
+flutterwave-models = { git="https://github.com/mealgro/flutterwave-v3-models", branch="fix-verify-meta-type", package="flutterwave-v3-models" }
 openssl = { features = ["bindgen", "v111", "v110", "vendored"], version = "0.10.68" }
 tokio = { version = "1.42.0", features = ["macros", "net", "rt", "test-util"] }
 async_symm_crypto = "0.1.0"
